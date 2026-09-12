@@ -265,10 +265,12 @@ body.overdrive .glitch { animation:glitch 1.5s steps(1) infinite; }
   .nav-list button { padding:9px 7px; }
   .hero { padding:104px 20px 70px; grid-template-columns:1fr; align-content:center; min-height:100svh; }
   .hero h1 { font-size:clamp(3.55rem,18vw,6.1rem); }
-  .hero-console { display:block; justify-self:start; width:min(100%, 390px); margin-top:8px; }
-  .profile-visual { height:230px; margin-bottom:10px; }
-  .hero-console .console-row, .hero-console .console-bars { display:none; }
-  .hero-console .console-top { border-bottom:0; padding-bottom:0; }
+  .hero-console { display:block; justify-self:start; width:min(100%, 390px); margin-top:8px; padding:12px; }
+  .profile-visual { height:clamp(180px, 58vw, 230px); margin-bottom:10px; }
+  .hero-console .console-row { grid-template-columns:64px minmax(0, 1fr); gap:10px; padding:8px 0; font-size:.62rem; }
+  .hero-console .console-row strong { text-align:right; overflow-wrap:anywhere; }
+  .hero-console .console-bars { display:none; }
+  .hero-console .console-top { padding-bottom:9px; }
   .hero-copy > p { font-size:.95rem; }
   .scroll-marker { left:20px; }
   .content-section { padding:100px 20px 70px; }
